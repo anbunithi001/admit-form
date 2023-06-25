@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Applicant Form</title>
+    <!---Custom CSS File--->
+    <link rel="stylesheet" href="style.css" />
+  <body>
+    <section class="container">
+      <header><h1>Applicant Form</h1></header>
+      <form action="./connect.php" method="post" class="form">
+        <div class="input-box">
+          <label><strong>Name</strong></label>
+          <input class="box" type="text" placeholder="Enter full name" name="name" required />
+        </div>
+
+        <div class="input-box">
+          <label><strong>Email Address</strong></label>
+          <input class="box" type="email" placeholder="Enter email address" name="email" required />
+        </div>
+
+        <div class="input-box">
+          <label><strong>Qualification</strong></label>
+          <input class="box" type="text" name="qualification" required />
+        </div>
+
+        <div class="column">
+          <div class="input-box">
+            <label><strong>Age</strong></label>
+            <input class="box" type="number" placeholder="Enter Age" name="age" required />
+          </div>
+
+          <div class="input-box">
+            <label><strong>Birth Date</strong></label>
+            <input class="box" type="date" placeholder="Enter birth date" name="dob" required />
+          </div>
+        </div>
+
+        <div class="gender-box">
+          <h3><strong>Gender</strong></h3>
+          <div class="gender-option">
+            <div class="gender">
+              <input  type="radio" id="check-male" name="gender" value="M"  checked />
+              <label for="check-male">Male</label>
+            </div>
+            <div class="gender">
+              <input type="radio" id="check-female" name="gender" value="F" />
+              <label for="check-female">Female</label>
+            </div>
+            <div class="gender">
+              <input type="radio" id="check-other" name="gender" value="O" />
+              <label for="check-other">Prefer not to say</label>
+            </div>
+          </div>
+        </div>
+        <button>Submit</button>
+      </form>
+    </section>
+  </body>
+</html>
